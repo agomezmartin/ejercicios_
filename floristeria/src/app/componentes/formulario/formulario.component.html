@@ -1,0 +1,38 @@
+<div class="card flex justify-content-center">
+  <div class="flex flex-wrap gap-3">
+      <div class="flex align-items-center">
+          <p-radioButton (click)="plantasDescripcion()" name="planta" value="cocotero" [(ngModel)]="plantaNombre" inputId="cocotero"></p-radioButton>
+          <label for="cocotero" class="ml-2">Cocotero</label>
+      </div>
+
+      <div class="flex align-items-center">
+          <p-radioButton name="planta" value="sterlitzia" [(ngModel)]="plantaNombre" inputId="sterlitzia" (click)="plantasDescripcion()"></p-radioButton>
+          <label for="sterlitzia" class="ml-2">Sterlitzia</label>
+      </div>
+
+      <div class="flex align-items-center">
+          <p-radioButton name="planta" value="zamioculca" [(ngModel)]="plantaNombre" inputId="zamioculca" (click)="plantasDescripcion()"></p-radioButton>
+          <label for="zamioculca" class="ml-2">Zamioculca</label>
+      </div>
+
+      <div class="flex align-items-center">
+          <p-radioButton name="planta" value="dracena" [(ngModel)]="plantaNombre" inputId="dracena" (click)="plantasDescripcion()"></p-radioButton>
+          <label for="dracena" class="ml-2">Dracena</label>
+      </div>
+
+      <div class="flex align-items-center">
+        <p-radioButton name="planta" value="ficus" [(ngModel)]="plantaNombre" inputId="ficus" (click)="plantasDescripcion()"></p-radioButton>
+        <label for="ficus" class="ml-2">Ficus</label>
+    </div>
+
+    <h1>{{plantaNombre | uppercase}}</h1>
+    <h4>{{plantaDescripcion}}</h4>
+
+
+    <img src="/assets/img/{{plantaNombre}}.jpg" alt="{{plantaNombre}}" style="position: relative; width: 50%; height: 100%x;">
+
+    </div>
+
+
+
+</div>

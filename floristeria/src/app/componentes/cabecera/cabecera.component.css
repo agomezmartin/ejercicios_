@@ -1,0 +1,18 @@
+header{
+/*    width: 50%;
+    margin: 0 25% 0 25%;
+*/    text-align: center;
+    background-color: #fef6e7;
+    height: 4em;
+    border: #c7c4ba 1px dashed;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+h1 {
+    display: inline;
+    margin: 10% 0 10% 0;
+    font-weight:lighter;
+}

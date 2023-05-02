@@ -1,0 +1,18 @@
+footer{
+    /*    width: 50%;
+        margin: 0 25% 0 25%;
+    */    text-align: center;
+        background-color: #303030;
+        height: 4em;
+        border: #c7c4ba 1px solid;
+        clear: both;
+        margin: 0;
+
+    }
+
+    h1 {
+        display: inline;
+        margin: 10% 0 10% 0;
+        font-weight: bolder;
+        color: #FFFFFF;
+    }

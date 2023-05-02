@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+/*    background-color:#ffffff;
+*/    color: #191417;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+/*    border: 1px solid red;
+*/}
+
+::selection {
+    background-color: #191417;
+    color: aliceblue;
+}
+
+h1 {
+    font-variant: small-caps;
+    font-size: large;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
