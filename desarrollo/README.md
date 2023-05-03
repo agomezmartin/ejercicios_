@@ -10,4 +10,4 @@ A final del día todos los ejercicios realizados se guardarán en un *subdirecto
 
 Estructura de carpetas:
 
-[![estructura de carpetas](/_assets/folder_srtucture.png "Shiprock, New Mexico by Beau Rogers")]
+[![estructura de carpetas](./_assets/folder_srtucture.png "Shiprock, New Mexico by Beau Rogers")]
