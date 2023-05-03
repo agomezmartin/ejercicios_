@@ -1,35 +1,19 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Prueba PHP</title>
-</head>
-<body>
+<?php
 
-	<?php
-
-		$nombre = "Asier";
-
-		echo "</br>";
-		echo "El nombre original es: " .$nombre;
-		echo "</br>";
+	if(isset($_POST["enviando"])){ // confirma que el botón de SUBMIT se ha ejecutado
 		
-		include("datos_otros.php");
-		dameNombre();
+		// se recogen los valores introducidos en el formulario y se asignan a variables
+		$usuario = $_POST["n"];
+		$edad = $_POST["e"];
 
-		echo "</br>";
-		echo "El nombre original es: " .$nombre;
-		
-		function dameDatos(){
-			echo "Esta función se ejecuta en el index.html";
+		// se realiza la LÓGICA con los datos recogidos
+		if($usuario=="Sandra" && $edad>=18){
+			echo("$usuario es mayor de edad.");
+		} else {
+			echo("$usuario es menor de edad.");
 		}
-
-		echo "</br>";
-		dameDatos();
-	?>
+	};
 
 
-</body>
-</html>
+
+?>
