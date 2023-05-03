@@ -4,7 +4,7 @@
 
 -   Carpeta DESARROLLO
 
-El archivo `index.html` contendrá el ejercicio *en curso*. A medida que se realicen ejercicios nuevos, cada `index.html` será renombrado con un nombre **único**. 
+El archivo `index.html` (o `index.php`) contendrá el ejercicio *en curso*. A medida que se realicen ejercicios nuevos, cada `index.html` será renombrado con un nombre **único**. 
 
 A final del día todos los ejercicios realizados se guardarán en un *subdirectorio* con la **fecha** del día.
 
