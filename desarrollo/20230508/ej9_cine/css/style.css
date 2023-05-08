@@ -1,0 +1,18 @@
+		* {
+			margin: 0;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		form {
+			width: 50%;
+			margin: auto;
+			padding: 20px;
+			border: 1px hotpink solid;
+			border-radius: 20px;
+		}
+		label {
+			display: inline-block;
+			width: 100%;
+		}
+		input{
+			display: block;
+		}

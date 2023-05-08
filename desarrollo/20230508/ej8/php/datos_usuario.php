@@ -1,6 +1,6 @@
 <?php
 
-if($_POST['entrando']){
+if(isset(($_POST['entrando'])){
 
 	// captura de datos
 	$u = $_POST['usu'];
