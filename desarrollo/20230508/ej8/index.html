@@ -31,17 +31,18 @@
 </head>
 <body>
 
-	<form action="index.php" method="post" >
+	<form action="php/datos_usuario.php" method="post">
 
-			<label for="nombre">Nombre</label>
-			<input type="text" name="n">
+		<label for="usu">Usuario:</label>
+		<input type="text" name="usu" id="usu" placeholder="mayúsculas">
 
+		<label for="contra">Contraseña:</label>
+		<input type="password" name="contra" id="contra" placeholder="máximo 5 caracteres">
 
-			<label for="edad">Edad</label>
-			<input type="text" name="e">
-
-			<input type="submit" name="enviando" value="Enviar">
-
+		<input type="submit" name="entrando" value="Entrar">
 	</form>
+
+
+
 </body>
 </html>
