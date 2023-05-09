@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;  
+}
+form{
+    width: 250px;
+    background-color: bisque;
+    margin:50px auto;
+    padding: 20px;
+}
+label{
+    width: 100px;
+    display: inline-block;
+}
+label,input{
+    margin-bottom: 10px;
+}
