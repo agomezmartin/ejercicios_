@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+/*    border: 1px solid green;
+*/}
+
+form {
+    width: 75%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+fieldset{
+    border: 1px solid pink;
+    width: 80%;
+    margin: auto;
+}
+
+
