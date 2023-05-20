@@ -7,25 +7,40 @@ import { Component } from '@angular/core';
 })
 export class FormularioComponent {
 
+//  visible="none";
   precio:number = 0;
-  visible="none";
 
-  calcularPrecios(bolso:string, talla:string){
+  calcularPrecios(bolso:string, talla:string):any{
 
-/*    switch (true) {
-      case bolso='Dalia' || bolso='azalea' || bolso='margarita':
+    switch (true) {
+
+      case bolso=='Dalia' || bolso=='Azalea' || bolso=='Margarita':
         if(talla=="pequeño"){
           this.precio=10;
+        } else if(talla=="mediano") {
+          this.precio=20;
+        } else if(talla=="grande"){
+          this.precio=40;
         }
         break;
-    
+
+        case bolso=='Gitamilla' || bolso=='Crisantemo' || bolso=='Margarita':
+          if(talla=="pequeño"){
+            this.precio=15;
+          } else if(talla=="mediano") {
+            this.precio=25;
+          } else if(talla=="grande"){
+            this.precio=45;
+          }
+          break;
+
       default:
         break;
     }
-    
-    this.visible="visible";
-    return this.precio, this.visible;
-*/
+
+//    this.visible="visible";
+    return this.precio;
+
   }
 
 }
