@@ -1,0 +1,43 @@
+  <!-- RADIO BUTTONS -->
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="bolsos" id="dalia" value="dalia">
+    <label class="form-check-label" for="Dalia">Dalia</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="bolsos" id="azalea" value="azalea">
+    <label class="form-check-label" for="Azalea">Azalea </label>
+  </div>
+  <br>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="bolsos" id="margarita" value="margarita">
+    <label class="form-check-label" for="Margarita">Margarita</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="bolsos" id="gitamilla" value="gitamilla">
+    <label class="form-check-label" for="Gitamilla">Gitamilla</label>
+  </div>
+  <br>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="bolsos" id="crisantemo" value="crisantemo">
+    <label class="form-check-label" for="Crisantemo">Crisantemo</label>
+  </div>
+
+<!-- SELECT | OPTION -->
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="tallas">Elige el tamaño del bolso:</label>
+      <select id="tallas" name="talla" class="form-control">
+        <option selected value="pequeño">Pequeño</option>
+        <option selected value="mediano">Mediano</option>
+        <option selected value="grande">Grande</option>
+        <option selected>Elige talla...</option>
+      </select>
+    </div>
+  </div>
+
+
+<button (click)="calcularPrecio(document.getElementByType("radio").getId(), document.getElementById("tallas").getValue())">Calcular precio</button>
+
+<section>
+  Precio: {{precio}}€
+</section>
