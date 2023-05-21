@@ -10,12 +10,14 @@ export class FormularioComponent {
 //  visible="none";
   precio:number = 0;
 
+
   calcularPrecios(bolso:string, talla:string):any{
 
     switch (true) {
 
       case bolso=='Dalia' || bolso=='Azalea' || bolso=='Margarita':
-        if(talla=="pequeño"){
+
+      if(talla=="pequeño"){
           this.precio=10;
         } else if(talla=="mediano") {
           this.precio=20;
