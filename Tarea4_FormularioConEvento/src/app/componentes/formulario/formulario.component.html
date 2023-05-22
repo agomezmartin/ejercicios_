@@ -4,47 +4,49 @@
 
   <!-- RADIO BUTTONS -->
   <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="bolsos" id="Dalia" value="dalia">
+    <input class="form-check-input" type="radio" name="bolso" id="Dalia" value="dalia">
     <label class="form-check-label" for="Dalia">Dalia</label>
   </div>
   <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="bolsos" id="Azalea" value="azalea">
+    <input class="form-check-input" type="radio" name="bolso" id="Azalea" value="azalea">
     <label class="form-check-label" for="Azalea">Azalea </label>
   </div>
   <br>
   <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="bolsos" id="Margarita" value="margarita">
+    <input class="form-check-input" type="radio" name="bolso" id="Margarita" value="margarita">
     <label class="form-check-label" for="Margarita">Margarita</label>
   </div>
   <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="bolsos" id="Gitamilla" value="gitamilla">
+    <input class="form-check-input" type="radio" name="bolso" id="Gitamilla" value="gitamilla">
     <label class="form-check-label" for="Gitamilla">Gitamilla</label>
   </div>
   <br>
   <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="bolsos" id="Crisantemo" value="crisantemo">
+    <input class="form-check-input" type="radio" name="bolso" id="Crisantemo" value="crisantemo">
     <label class="form-check-label" for="Crisantemo">Crisantemo</label>
   </div>
 
   <!-- SELECT | OPTION -->
   <div class="form-row">
     <div class="form-group col-md-4">
-      <label for="tallas">Elige el tamaño del bolso:</label>
-      <select id="tallas" class="form-control">
-        <option selected>Pequeño</option>
-        <option selected>Mediano</option>
-        <option selected>Grande</option>
+      <label for="talla">Elige el tamaño del bolso:</label>
+      <select id="talla" name="talla" class="form-control">
+        <option selected value="pequeno" >Pequeño</option>
+        <option selected value="mediano" >Mediano</option>
+        <option selected value="grande" >Grande</option>
         <option selected>Elige talla...</option>
       </select>
     </div>
   </div>
+
 <!--    <button type="submit" class="btn btn-primary">Calcular precio</button> -->
-    <button (click)="calcularPrecios('Gitamilla', 'mediano')" class="btn btn-primary">Calcular precio</button>
+
+<button (click)="calcularPrecios(bolso, talla)" class="btn btn-primary">Calcular precio</button>
 
 <!-- RESULTADO -->
 <div class="form-row">
   <div class="form-group col-md-4">
-    <p>Precio: {{precio}}€</p>
+    <p>Precio: {{precio}}{{divisa}}</p>
   </div>
 </div>
 

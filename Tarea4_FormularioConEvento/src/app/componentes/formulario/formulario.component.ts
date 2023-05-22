@@ -8,16 +8,22 @@ import { Component } from '@angular/core';
 export class FormularioComponent {
 
 //  visible="none";
-  precio:number = 0;
+precio?:number;
+divisa?:string;
+bolso?:string[];
+talla?:string[];
 
 
-  calcularPrecios(bolso:string, talla:string):any{
+  calcularPrecios(bolso:string[], talla:string[]):any{
+
+//    let bolso = document.getElementById("talla").value;
+//    let talla = document.getElementsByName("bolso")
 
     switch (true) {
 
       case bolso=='Dalia' || bolso=='Azalea' || bolso=='Margarita':
 
-      if(talla=="pequeño"){
+      if(talla=="pequeno"){
           this.precio=10;
         } else if(talla=="mediano") {
           this.precio=20;
@@ -27,7 +33,7 @@ export class FormularioComponent {
         break;
 
         case bolso=='Gitamilla' || bolso=='Crisantemo' || bolso=='Margarita':
-          if(talla=="pequeño"){
+          if(talla=="pequeno"){
             this.precio=15;
           } else if(talla=="mediano") {
             this.precio=25;
@@ -41,7 +47,8 @@ export class FormularioComponent {
     }
 
 //    this.visible="visible";
-    return this.precio;
+    this.currency = "€";
+    return this.precio + this.currency;
 
   }
 
