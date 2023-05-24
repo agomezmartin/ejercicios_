@@ -38,6 +38,12 @@
       </select>
     </div>
   </div>
+<!-- RECORRER CON FOR -->
+  <select name="talla" id="talla" (change)="capturar()">
+    <option *ngFor="let talla of tallas">
+      {{talla}}
+    </option>
+  </select>
 
 <!--    <button type="submit" class="btn btn-primary">Calcular precio</button> -->
 
