@@ -11,10 +11,17 @@ export class FormularioComponent {
 precio?:number;
 divisa?:string;
 bolso?:string[];
-talla?:string[];
+tallas?:string[] = [
+  "Elige talla...",
+  "talla" : [
+    "pequeño": "Pequeño",
+    "mediano": "Mediano",
+    "grande": "Grande",
+  ],
+];
 
 
-  calcularPrecios(bolso:string[], talla:string[]):any{
+  calcularPrecios(bolso:string[], tallas:string[]):any{
 
 //    let bolso = document.getElementById("talla").value;
 //    let talla = document.getElementsByName("bolso")
@@ -23,21 +30,21 @@ talla?:string[];
 
       case bolso=='Dalia' || bolso=='Azalea' || bolso=='Margarita':
 
-      if(talla=="pequeno"){
+      if(tallas=="pequeno"){
           this.precio=10;
-        } else if(talla=="mediano") {
+        } else if(tallas=="mediano") {
           this.precio=20;
-        } else if(talla=="grande"){
+        } else if(tallas=="grande"){
           this.precio=40;
         }
         break;
 
         case bolso=='Gitamilla' || bolso=='Crisantemo' || bolso=='Margarita':
-          if(talla=="pequeno"){
+          if(tallas=="pequeno"){
             this.precio=15;
-          } else if(talla=="mediano") {
+          } else if(tallas=="mediano") {
             this.precio=25;
-          } else if(talla=="grande"){
+          } else if(tallas=="grande"){
             this.precio=45;
           }
           break;

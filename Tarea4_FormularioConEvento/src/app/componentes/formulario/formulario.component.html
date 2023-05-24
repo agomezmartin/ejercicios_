@@ -27,29 +27,25 @@
   </div>
 
   <!-- SELECT | OPTION -->
+
   <div class="form-row">
     <div class="form-group col-md-4">
       <label for="talla">Elige el tamaño del bolso:</label>
-      <select id="talla" name="talla" class="form-control">
-        <option selected value="pequeno" >Pequeño</option>
-        <option selected value="mediano" >Mediano</option>
-        <option selected value="grande" >Grande</option>
-        <option selected>Elige talla...</option>
+
+      <!-- RECORRER CON FOR -->
+      <select name="tallas" id="tallas">
+        <option *ngFor="let t of tallas">
+          {{t.talla}}
+        </option>
       </select>
     </div>
   </div>
-<!-- RECORRER CON FOR -->
-  <select name="talla" id="talla" (change)="capturar()">
-    <option *ngFor="let talla of tallas">
-      {{talla}}
-    </option>
-  </select>
 
 <!--    <button type="submit" class="btn btn-primary">Calcular precio</button> -->
 
-<button (click)="calcularPrecios(bolso, talla)" class="btn btn-primary">Calcular precio</button>
+  <button (click)="calcularPrecios(bolso, {{tallas(t)}})" class="btn btn-primary">Calcular precio</button>
 
-<!-- RESULTADO -->
+ <!-- RESULTADO -->
 <div class="form-row">
   <div class="form-group col-md-4">
     <p>Precio: {{precio}}{{divisa}}</p>
